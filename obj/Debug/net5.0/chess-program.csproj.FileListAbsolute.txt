@@ -1,0 +1,16 @@
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\chess-program.exe
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\chess-program.deps.json
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\chess-program.runtimeconfig.json
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\chess-program.runtimeconfig.dev.json
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\chess-program.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\ref\chess-program.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\chess-program.pdb
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.csproj.AssemblyReference.cache
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.AssemblyInfoInputs.cache
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.AssemblyInfo.cs
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.csproj.CoreCompileInputs.cache
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\ref\chess-program.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.pdb
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.genruntimeconfig.cache
