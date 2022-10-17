@@ -6,7 +6,15 @@ namespace chess_program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Create the cast
+            
+            // Create the script
+
+            // Prepare services for use
+
+            // Create director
+            Director director = new Director();
+            director.startGame();
         }
     }
 }

@@ -1,6 +1,6 @@
 using System;
 
-namespace chess_program
+namespace chess_program.Casting
 {
     public class Point{
         private int _x;
@@ -14,7 +14,7 @@ namespace chess_program
 
         public int GetX()
         {
-            return x;
+            return _x;
         }
 
         public int GetY()
@@ -24,10 +24,35 @@ namespace chess_program
 
         public Point Add(Point other)
         {
-            int new X = _x + other._x;
+            int newX = _x + other._x;
             int newY = _y + other._y;
+
+            return new Point(newX, newY);
         }
 
-        
+        public Point Reverse()
+        {
+            return Scale(-1);
+        }
+
+        public Point Scale(int factor)
+        {
+            int newX = _x * factor;
+            int newY = _y * factor;
+
+            return new Point(newX, newY);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Point point &&
+                    _x == point._x &&
+                    _y == point._y;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(_x, _y);
+        }
     }
 }

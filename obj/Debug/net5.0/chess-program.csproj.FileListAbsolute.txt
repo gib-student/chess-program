@@ -14,3 +14,9 @@ C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-pr
 C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\ref\chess-program.dll
 C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.pdb
 C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.genruntimeconfig.cache
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\Raylib-cs.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\runtimes\linux-x64\native\libraylib.so
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\runtimes\osx-x64\native\libraylib.dylib
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\runtimes\win-x64\native\raylib.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\bin\Debug\net5.0\runtimes\win-x86\native\raylib.dll
+C:\Trevor Data\Other\Personal\Creativity\chess-program\obj\Debug\net5.0\chess-program.csproj.CopyComplete

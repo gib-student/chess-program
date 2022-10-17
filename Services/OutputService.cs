@@ -61,7 +61,7 @@ namespace chess_program.Services
 
             if (darkText)
             {
-                color = Raylib_cs.Color.WHITE
+                color = Raylib_cs.Color.WHITE;
             }
 
             Raylib.DrawText(text,
@@ -72,5 +72,35 @@ namespace chess_program.Services
         }
 
         public void DrawActor(Actor actor)
+        {
+            int x =  actor.GetX();
+            int y = actor.GetY();
+            int width = actor.GetWidth();
+            int height = actor.GetHeight();
+
+            if (actor.HasImage())
+            {
+                string image = actor.GetImage();
+                DrawImage(x, y, image);
+            }
+            else if (actor.HasText())
+            {
+                bool darkText = true;
+                string text = actor.GetText();
+                DrawText(x, y, text, darkText);
+            }
+            else
+            {
+                DrawBox(x, y, width, height);
+            }
+        }
+
+        public void DrawActors(List<Actor> actors)
+        {
+            foreach (Actor actor in actors)
+            {
+                DrawActor(actor);
+            }
+        }
     }
 }
