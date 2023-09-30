@@ -43,21 +43,4 @@ class User_interface:
             print("[Q]uit")
             response = input("--> ")
     
-    def valid_move(self, board=Board.Board(), move=""):
-        moves = move.split(" to ")
-        # Split move into start and destination squares
-        start = moves[0]
-        destination = moves[1]
-        # Split each move into letter and number
-        start_letter = list(start)[0]
-        # Ensure first character is a letter
-        if 'A' > start_letter > 
-        # Identify the color of the squares 
-        color = board.squares
-        # Identify the piece on the squares
-
-        # Ensure the move is legal for the given piece
-
-
-        # Ensure that the destination square does not contain a piece
-        # of the same color as the starting square
+    
