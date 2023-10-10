@@ -43,7 +43,7 @@ class Board:
                 color = "black" if color == "white" else "white"
 
                 # Create square
-                square = Square(column, row, color, piece)
+                square = Square.Square(column, row, color, piece)
                 # then add to array.
                 col_list[row] = square
             # Add column to board

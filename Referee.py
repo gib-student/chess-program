@@ -6,17 +6,6 @@ class Referee:
         # Split move into start and destination squares
         initial = moves[0]
         destination = moves[1]
-        # Ensure each move has two characters, no more and no less
-        if self.has_2_chars(initial, destination):
-            # Split each move into column and row
-            initial_column  = list(initial)[0]
-            initial_row     = list(initial)[1]
-            destination_column  = list(destination)[0]
-            destination_row     = list(destination)[1]
-        
-
-
-
 
         # Identify the color of the squares 
 
@@ -31,12 +20,50 @@ class Referee:
     # Ensure the string contains a letter a-h and a number 1-8.
     # Expects a string.
     # Returns true if input is valid, and false if it is not.
-    def valid_move_input(self, move):
+    def valid_square(self, input, move_object, initial_or_dest):
+        # Check if input has at least two chars
+        if len(list(input)) < 2:
+            return "not enough chars"
+        # Check if input has more than two chars
+        elif len(list(input)) > 2:
+            return "too many chars"
+        # Check if input corresponds to a square on the board
         # Split each move into letter and number
-        first_char = list(move)[0]
-        second_char = list(move)[0]
-        column = first_char     # default: first char is column
-        row = second_char       # default: second char is row
+        column  = ""
+        row     = ""
+        char1 = list(input)[0]
+        char2 = list(input)[1]
+        # Figure out which char is the letter (column), and which is the
+        # row (number)
+        # Check if char1 corresponds to a letter a-h
+        if 'a' <= char1 <= 'h':
+            column = char1
+            # Check if char2 corresponds to a number 1-8
+            if '1' <= char2 <= '8':
+                row = char2
+            # if not, invalid square
+            else: return "invalid square"
+        # if not, check if char2 corresponds to a letter a-h
+        elif 'a' <= char2 <= 'h':
+            column = char2
+            # Check if char1 corresponds to a number 1-8
+            if '1' <= char1 <= '8':
+                row = char1
+            else: return "invalid square"
+        # if not, invalid square
+        else: return "invalid square"
+
+        # Once all tests are passed, assign values in the move object
+        # and return "valid"
+        if initial_or_dest == "initial":
+            move_object.initial         = input
+            move_object.initial_column  = column
+            move_object.initial_row     = row
+        elif initial_or_dest == "destination":
+            move_object.destination         = input
+            move_object.destination_column  = column
+            move_object.destination_row     = row
+        return "valid"
         
 
     # Ensure input is a number 1-8.
