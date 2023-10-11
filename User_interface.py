@@ -49,11 +49,18 @@ class User_interface:
                 starting_square     = self.get_square(new_move, "initial")
                 destination_square  = ""
                 
-                # Get destination square
+                # Validate initial square information
                 if starting_square != "quit":
-                    # Once we have the starting square, get the destination square
-                    destination_square = self.get_square(new_move, "destination")
-                    
+                    if self.valid_square_info(board, new_move, turn, "initial") == "valid":
+                        # Get destination move
+                        destination_square = self.get_square(new_move, "destination")
+                        # Validate destination square information
+                        if starting_square != "quit":
+                            if self.valid_square_info(board, new_move, turn, "destination" == "valid"):
+                                # If all tests pass, then update the move, append to list of moves,
+                                # and make the change to the board
+                                pass
+
                 # Quit if user wants to end the game
                 else: done = True
 
@@ -99,8 +106,28 @@ class User_interface:
         else: return response
     
     # Handle user input
-    def handle_input(self, new_move):
-        pass
+    def valid_square_info(self, board, move, turn, initial_or_dest):
+        # Identify which square on the board
+        column = ""
+        row = ""
+        board_square = None
+        if initial_or_dest == "initial":
+            column  = move.initial_column
+            row      = move.initial_row
+        elif initial_or_dest == "destination":
+            column  = move.destination_column
+            row      = move.destination_row
+        board_square = board[column][row]
+        # If board square has no piece, print error message
+        if board_square.piece == "":
+            print("Square has no piece on it.")
+            return "invalid"
+        # If initial board square has a piece of the opposing turn's color,
+        # print error message
+        elif initial_or_dest == "initial" and board_square.color != turn:
+            print("This square has a piece belonging to the other player. Select a square holding one of your pieces.")
+            return "invalid"
+            
 
 
     # Return true if user wants to quit, false if they do not
