@@ -1,5 +1,6 @@
 import Board
 
+# Referee class
 class Referee:
     def valid_move(self, board=Board.Board(), move=""):
         moves = move.split(" to ")
